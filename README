@@ -1,0 +1,82 @@
+pycdio
+------------------------------------------
+This is a wrapper for The CD Input and Control library (libcdio) which
+is written in C. The library encapsulates CD-ROM reading and
+control. Python programs wishing to be oblivious of the OS- and
+device-dependent properties of a CD-ROM can use this library.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libcdio7-0.77-1
+  libiso9660_5-0.77-1
+  python-2.4.3-1
+
+Build requirements:
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.0-1
+  gcc-core-3.4.4-1
+  make-3.8.0-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://www.gnu.org/software/libcdio/
+
+Canonical download:
+  http://ftp.gnu.org/gnu/libcdio/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pycdio-0.11-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pycdio-0.11-X.cygport all
+
+This will create:
+  /usr/src/pycdio-0.11-X-src.tar.bz2
+  /usr/src/pycdio-0.11-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/python2.4/site-packages/_pycdio.dll
+  /usr/lib/python2.4/site-packages/_pyiso9660.dll
+  /usr/lib/python2.4/site-packages/cdio.py
+  /usr/lib/python2.4/site-packages/cdio.pyc
+  /usr/lib/python2.4/site-packages/cdio.pyo
+  /usr/lib/python2.4/site-packages/iso9660.py
+  /usr/lib/python2.4/site-packages/iso9660.pyc
+  /usr/lib/python2.4/site-packages/iso9660.pyo
+  /usr/lib/python2.4/site-packages/pycdio.py
+  /usr/lib/python2.4/site-packages/pycdio.pyc
+  /usr/lib/python2.4/site-packages/pycdio.pyo
+  /usr/lib/python2.4/site-packages/pyiso9660.py
+  /usr/lib/python2.4/site-packages/pyiso9660.pyc
+  /usr/lib/python2.4/site-packages/pyiso9660.pyo
+  /usr/share/doc/Cygwin/pycdio-0.11.README
+  /usr/share/doc/pycdio-0.11/AUTHORS
+  /usr/share/doc/pycdio-0.11/COPYING
+  /usr/share/doc/pycdio-0.11/ChangeLog
+  /usr/share/doc/pycdio-0.11/INSTALL
+  /usr/share/doc/pycdio-0.11/NEWS
+  /usr/share/doc/pycdio-0.11/README
+
+------------------
+
+Port Notes:
+
+----- version 0.11-1 -----
+Version bump.
+
+----- version 0.10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

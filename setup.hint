@@ -1,0 +1,7 @@
+category: Python
+requires: cygwin libcdio7 libiso9660_5 python
+sdesc: "Python bindings for libcdio"
+ldesc: "This is a wrapper for The CD Input and Control library (libcdio)
+which is written in C. The library encapsulates CD-ROM reading and
+control. Python programs wishing to be oblivious of the OS- and
+device-dependent properties of a CD-ROM can use this library."
