@@ -6,21 +6,21 @@ control. Python programs wishing to be oblivious of the OS- and
 device-dependent properties of a CD-ROM can use this library.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libcdio7-0.77-1
-  libiso9660_5-0.77-1
+  cygwin-1.5.22-1
+  libcdio7-0.78.2-1
+  libiso9660_5-0.78.2-1
   python-2.4.3-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.0-1
+  binutils-20060817-1
+  cygport-0.2.7-1
   gcc-core-3.4.4-1
-  make-3.8.0-1
-  pkg-config-0.20-1
-  sed-4.1.4-1
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnu.org/software/libcdio/
@@ -31,15 +31,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pycdio-0.11-X-src.tar.bz2
+  unpack pycdio-0.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pycdio-0.11-X.cygport all
+  cygport ./pycdio-0.12-X.cygport all
 
 This will create:
-  /usr/src/pycdio-0.11-X-src.tar.bz2
-  /usr/src/pycdio-0.11-X.tar.bz2
+  /usr/src/pycdio-0.12-X-src.tar.bz2
+  /usr/src/pycdio-0.12-X.tar.bz2
 
 -------------------------------------------
 
@@ -59,17 +59,20 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/pyiso9660.py
   /usr/lib/python2.4/site-packages/pyiso9660.pyc
   /usr/lib/python2.4/site-packages/pyiso9660.pyo
-  /usr/share/doc/Cygwin/pycdio-0.11.README
-  /usr/share/doc/pycdio-0.11/AUTHORS
-  /usr/share/doc/pycdio-0.11/COPYING
-  /usr/share/doc/pycdio-0.11/ChangeLog
-  /usr/share/doc/pycdio-0.11/INSTALL
-  /usr/share/doc/pycdio-0.11/NEWS
-  /usr/share/doc/pycdio-0.11/README
+  /usr/share/doc/Cygwin/pycdio-0.12.README
+  /usr/share/doc/pycdio-0.12/AUTHORS
+  /usr/share/doc/pycdio-0.12/COPYING
+  /usr/share/doc/pycdio-0.12/ChangeLog
+  /usr/share/doc/pycdio-0.12/INSTALL
+  /usr/share/doc/pycdio-0.12/NEWS
+  /usr/share/doc/pycdio-0.12/README
 
 ------------------
 
 Port Notes:
+
+----- version 0.12-1 -----
+Version bump.
 
 ----- version 0.11-1 -----
 Version bump.
