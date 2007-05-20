@@ -1,4 +1,4 @@
-pycdio
+python-cdio
 ------------------------------------------
 This is a wrapper for The CD Input and Control library (libcdio) which
 is written in C. The library encapsulates CD-ROM reading and
@@ -6,18 +6,19 @@ control. Python programs wishing to be oblivious of the OS- and
 device-dependent properties of a CD-ROM can use this library.
 
 Runtime requirements:
-  cygwin-1.5.22-1
+  cygwin-1.5.24-2
   libcdio7-0.78.2-1
   libiso9660_5-0.78.2-1
-  python-2.4.3-1
+  python-2.5.1-1
 
 Build requirements:
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-2
-  automake1.9-1.9.6-1
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gcc-core-3.4.4-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -31,45 +32,48 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack pycdio-0.12-X-src.tar.bz2
+  unpack python-cdio-0.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./pycdio-0.12-X.cygport all
+  cygport ./python-cdio-0.12-X.cygport all
 
 This will create:
-  /usr/src/pycdio-0.12-X-src.tar.bz2
-  /usr/src/pycdio-0.12-X.tar.bz2
+  /usr/src/python-cdio-0.12-X-src.tar.bz2
+  /usr/src/python-cdio-0.12-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/lib/python2.4/site-packages/_pycdio.dll
-  /usr/lib/python2.4/site-packages/_pyiso9660.dll
-  /usr/lib/python2.4/site-packages/cdio.py
-  /usr/lib/python2.4/site-packages/cdio.pyc
-  /usr/lib/python2.4/site-packages/cdio.pyo
-  /usr/lib/python2.4/site-packages/iso9660.py
-  /usr/lib/python2.4/site-packages/iso9660.pyc
-  /usr/lib/python2.4/site-packages/iso9660.pyo
-  /usr/lib/python2.4/site-packages/pycdio.py
-  /usr/lib/python2.4/site-packages/pycdio.pyc
-  /usr/lib/python2.4/site-packages/pycdio.pyo
-  /usr/lib/python2.4/site-packages/pyiso9660.py
-  /usr/lib/python2.4/site-packages/pyiso9660.pyc
-  /usr/lib/python2.4/site-packages/pyiso9660.pyo
-  /usr/share/doc/Cygwin/pycdio-0.12.README
-  /usr/share/doc/pycdio-0.12/AUTHORS
-  /usr/share/doc/pycdio-0.12/COPYING
-  /usr/share/doc/pycdio-0.12/ChangeLog
-  /usr/share/doc/pycdio-0.12/INSTALL
-  /usr/share/doc/pycdio-0.12/NEWS
-  /usr/share/doc/pycdio-0.12/README
+  /usr/lib/python2.5/site-packages/_pycdio.dll
+  /usr/lib/python2.5/site-packages/_pyiso9660.dll
+  /usr/lib/python2.5/site-packages/cdio.py
+  /usr/lib/python2.5/site-packages/cdio.pyc
+  /usr/lib/python2.5/site-packages/cdio.pyo
+  /usr/lib/python2.5/site-packages/iso9660.py
+  /usr/lib/python2.5/site-packages/iso9660.pyc
+  /usr/lib/python2.5/site-packages/iso9660.pyo
+  /usr/lib/python2.5/site-packages/pycdio.py
+  /usr/lib/python2.5/site-packages/pycdio.pyc
+  /usr/lib/python2.5/site-packages/pycdio.pyo
+  /usr/lib/python2.5/site-packages/pyiso9660.py
+  /usr/lib/python2.5/site-packages/pyiso9660.pyc
+  /usr/lib/python2.5/site-packages/pyiso9660.pyo
+  /usr/share/doc/Cygwin/python-cdio-0.12.README
+  /usr/share/doc/python-cdio-0.12/AUTHORS
+  /usr/share/doc/python-cdio-0.12/COPYING
+  /usr/share/doc/python-cdio-0.12/ChangeLog
+  /usr/share/doc/python-cdio-0.12/INSTALL
+  /usr/share/doc/python-cdio-0.12/NEWS
+  /usr/share/doc/python-cdio-0.12/README
 
 ------------------
 
 Port Notes:
+
+----- version 0.12-2 -----
+Rebuilt for python-2.5.
 
 ----- version 0.12-1 -----
 Version bump.
