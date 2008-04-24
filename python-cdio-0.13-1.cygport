@@ -1,0 +1,4 @@
+DESCRIPTION="Python bindings for libcdio"
+HOMEPAGE="http://www.gnu.org/software/libcdio/"
+SRC_URI="mirror://gnu/libcdio/pycdio-${PV}.tar.gz"
+SRC_DIR="pycdio-${PV}"
