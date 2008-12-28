@@ -1,0 +1,7 @@
+ORIG_PN="pycdio"
+inherit distutils
+
+DESCRIPTION="Python bindings for libcdio"
+
+# SWIG-generated
+DIFF_EXCLUDES="pycdio.py pyiso9660.py"
